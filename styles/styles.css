@@ -1,3 +1,4 @@
+/* Navigation */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -9,10 +10,12 @@ nav a {
     padding: 20px;
 }
 
+/* Headings */
 h1 {
     color: darkblue;
 }
 
+/* General images */
 img {
     width: 150px;
     height: auto;
@@ -21,6 +24,46 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Profile image inside main */
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+/* Paragraphs */
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+/* Aside section */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+/* Image inside aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
