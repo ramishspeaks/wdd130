@@ -1,38 +1,62 @@
+/* ===============================
+   CSS VARIABLES
+================================ */
+:root {
+    --primary-color: darkblue;
+    --text-light: white;
+    --text-dark: #333;
+    --border-light: 1px solid rgb(0 0 0 / 0.2);
+    --padding-small: 10px;
+    --padding-medium: 20px;
+    --box-shadow: 0 0 30px gray;
+    --background-light: #eee;
+}
+
+/* ===============================
+   NAVIGATION
+================================ */
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--padding-small);
 }
 
 nav a {
-    color: white;
+    color: var(--text-light);
     display: block;
-    padding: 20px;
+    padding: var(--padding-medium);
 }
 
+/* ===============================
+   MAIN CONTENT
+================================ */
 main {
     max-width: 840px;
     margin: 0 auto;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
+/* Profile Image */
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border-light);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
 }
 
+/* ===============================
+   ASIDE
+================================ */
 aside {
     width: 20rem;
     margin: 1rem auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: var(--border-light);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--background-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
@@ -41,10 +65,16 @@ aside img {
     height: auto;
 }
 
+/* ===============================
+   TEXT
+================================ */
 p {
     padding: 0;
 }
 
+/* ===============================
+   FOOTER
+================================ */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
