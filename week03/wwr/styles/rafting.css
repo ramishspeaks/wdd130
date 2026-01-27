@@ -1,0 +1,127 @@
+/* ================================
+   UNIVERSAL RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   BODY
+================================ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* ================================
+   HEADER & NAV
+================================ */
+header {
+    background-color: #0b3c5d;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* HERO HEADING (overlay) */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+}
+
+/* HERO ARTICLE (overlay box) */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    max-width: 400px;
+}
+
+/* ARTICLE IMAGE FLOAT */
+.hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* ================================
+   MAIN CONTENT
+================================ */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #000;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* ================================
+   FOOTER SOCIAL MEDIA
+================================ */
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 50px;
+    height: auto;
+}
