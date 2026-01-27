@@ -1,4 +1,17 @@
 /* ================================
+   CSS VARIABLES
+================================ */
+:root {
+    --primary-color: #0b3c5d;
+    --accent-color: #ffffff;
+    --text-dark: #000000;
+    --overlay-dark: rgba(0, 0, 0, 0.6);
+    --overlay-light: rgba(255, 255, 255, 0.85);
+    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: Georgia, "Times New Roman", serif;
+}
+
+/* ================================
    UNIVERSAL RESET
 ================================ */
 * {
@@ -11,15 +24,26 @@
    BODY
 ================================ */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    font-family: var(--body-font);
+    color: var(--text-dark);
+}
+
+/* ================================
+   LAYOUT WIDTH
+================================ */
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 /* ================================
    HEADER & NAV
 ================================ */
 header {
-    background-color: #0b3c5d;
+    background-color: var(--primary-color);
+    padding: 1rem;
 }
 
 header img {
@@ -30,11 +54,11 @@ header img {
 nav {
     display: flex;
     gap: 1rem;
-    padding: 1rem;
+    margin-top: 0.5rem;
 }
 
 nav a {
-    color: white;
+    color: var(--accent-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -47,54 +71,48 @@ nav a {
 }
 
 .hero img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
 }
 
-/* HERO HEADING (overlay) */
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 20px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 15px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--overlay-dark);
+    color: var(--accent-color);
 }
 
-/* HERO ARTICLE (overlay box) */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 15px;
+    background-color: var(--overlay-light);
+    padding: 16px;
     max-width: 400px;
 }
 
-/* ARTICLE IMAGE FLOAT */
 .hero article img {
     float: right;
-    width: 150px;
-    height: auto;
+    width: 125px;
     margin-left: 10px;
 }
 
 /* ================================
    MAIN CONTENT
 ================================ */
-main {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 1rem;
-}
-
 section {
-    margin-bottom: 2rem;
+    margin: 16px;
+    padding: 8px;
 }
 
-section h2 {
-    margin-bottom: 0.5rem;
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 /* ================================
@@ -102,14 +120,11 @@ section h2 {
 ================================ */
 footer {
     margin-top: 2rem;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--text-dark);
     padding: 1rem;
     text-align: center;
 }
 
-/* ================================
-   FOOTER SOCIAL MEDIA
-================================ */
 .socialmedia {
     display: flex;
     justify-content: center;
