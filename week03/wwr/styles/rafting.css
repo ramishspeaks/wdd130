@@ -1,37 +1,28 @@
-/* ================================
-   CSS VARIABLES
-================================ */
+/* ================================ CSS VARIABLES ================================ */
 :root {
     --primary-color: #0b3c5d;
     --secondary-color: #f4a261;
     --accent-color: #264653;
     --light-bg: #f1f1f1;
-
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* ================================
-   UNIVERSAL RESET
-================================ */
+/* ================================ UNIVERSAL RESET ================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ================================
-   BODY
-================================ */
+/* ================================ BODY ================================ */
 body {
     font-family: var(--body-font);
     color: var(--accent-color);
     line-height: 1.6;
 }
 
-/* ================================
-   HEADER & NAV
-================================ */
+/* ================================ HEADER & NAV ================================ */
 header {
     background-color: var(--primary-color);
 }
@@ -53,9 +44,7 @@ nav a {
     font-weight: bold;
 }
 
-/* ================================
-   HERO SECTION
-================================ */
+/* ================================ HERO SECTION ================================ */
 .hero {
     position: relative;
 }
@@ -96,9 +85,7 @@ nav a {
     margin-left: 10px;
 }
 
-/* ================================
-   MAIN CONTENT
-================================ */
+/* ================================ MAIN CONTENT ================================ */
 main {
     width: 840px;
     margin: 2rem auto;
@@ -119,9 +106,7 @@ p {
     margin: 16px;
 }
 
-/* ================================
-   FOOTER
-================================ */
+/* ================================ FOOTER ================================ */
 footer {
     width: 840px;
     margin: 2rem auto;
@@ -130,9 +115,7 @@ footer {
     text-align: center;
 }
 
-/* ================================
-   SOCIAL MEDIA LINKS
-================================ */
+/* ================================ SOCIAL MEDIA LINKS ================================ */
 .socialmedia {
     display: flex;
     justify-content: center;
