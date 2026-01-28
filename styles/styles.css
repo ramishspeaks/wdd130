@@ -1,82 +1,100 @@
-/* ===============================
-   CSS VARIABLES
+/* ================================
+   UNIVERSAL RESET
 ================================ */
-:root {
-    --primary-color: darkblue;
-    --text-light: white;
-    --text-dark: #333;
-    --border-light: 1px solid rgb(0 0 0 / 0.2);
-    --padding-small: 10px;
-    --padding-medium: 20px;
-    --box-shadow: 0 0 30px gray;
-    --background-light: #eee;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ===============================
-   NAVIGATION
+/* ================================
+   BASE STYLES
 ================================ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #0b3c5d;
+    padding: 1rem;
+}
+
 nav {
-    background-color: var(--primary-color);
-    padding: var(--padding-small);
+    display: flex;
+    gap: 1rem;
 }
 
 nav a {
-    color: var(--text-light);
-    display: block;
-    padding: var(--padding-medium);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* ===============================
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
    MAIN CONTENT
 ================================ */
 main {
-    max-width: 840px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
 }
 
-h1 {
-    color: var(--primary-color);
+main h1 {
+    margin-bottom: 1rem;
 }
 
-/* Profile Image */
 main img {
-    width: 150px;
-    height: auto;
-    border: var(--border-light);
-    padding: 2px;
-    box-shadow: var(--box-shadow);
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
-/* ===============================
+/* ================================
    ASIDE
 ================================ */
 aside {
-    width: 20rem;
-    margin: 1rem auto;
-    border: var(--border-light);
-    padding: 1rem;
-    background-color: var(--background-light);
-    color: var(--text-dark);
+    width: 20em;
     text-align: center;
+    position: relative;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
-/* ===============================
-   TEXT
-================================ */
-p {
-    padding: 0;
+aside h2 {
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.25rem 0.5rem;
 }
 
-/* ===============================
+/* ================================
    FOOTER
 ================================ */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    background-color: #0b3c5d;
+    color: #ffffff;
     text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* ================================
+   Class Selectors
+================================ */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
