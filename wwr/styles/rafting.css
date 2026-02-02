@@ -22,9 +22,21 @@ body {
     line-height: 1.6;
 }
 
+/* ================================ PAGE WIDTH ================================ */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
 /* ================================ HEADER & NAV ================================ */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--primary-color);
+    padding: 1rem;
 }
 
 header img {
@@ -35,11 +47,19 @@ header img {
 nav {
     display: flex;
     gap: 1rem;
-    padding: 1rem;
+}
+
+/* REQUIRED SPACING RULE */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -64,7 +84,7 @@ nav a {
     text-align: center;
     font-family: var(--heading-font);
     background-color: var(--accent-color);
-    color: white;
+    color: #ffffff;
     opacity: 0.85;
 }
 
@@ -73,8 +93,7 @@ nav a {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 16px;
+    background-color: var(--light-bg);
     max-width: 400px;
 }
 
@@ -87,13 +106,12 @@ nav a {
 
 /* ================================ MAIN CONTENT ================================ */
 main {
-    width: 840px;
-    margin: 2rem auto;
+    background-color: var(--light-bg);
+    padding: 1rem 0;
 }
 
 section {
-    margin: 16px;
-    padding: 8px;
+    background-color: #ffffff;
 }
 
 h2 {
@@ -102,14 +120,8 @@ h2 {
     margin-bottom: 8px;
 }
 
-p {
-    margin: 16px;
-}
-
 /* ================================ FOOTER ================================ */
 footer {
-    width: 840px;
-    margin: 2rem auto;
     border-top: 1px solid #000;
     padding: 1rem;
     text-align: center;
@@ -128,6 +140,6 @@ footer {
 }
 
 .socialmedia img {
-    width: 50px;
+    width: 32px;
     height: auto;
 }
