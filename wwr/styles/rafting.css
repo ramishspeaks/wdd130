@@ -64,6 +64,10 @@ nav a {
     font-weight: bold;
 }
 
+header {
+    color: #ffffff;
+}
+
 /* ================================ HERO SECTION ================================ */
 .hero {
     position: relative;
