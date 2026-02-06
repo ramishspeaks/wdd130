@@ -1,121 +1,83 @@
-/* ================================
-   UNIVERSAL RESET
-================================ */
+/* ===================== RESET ===================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ================================
-   BODY
-================================ */
+/* ===================== BODY ===================== */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #000;
 }
 
-/* ================================
-   HEADER & NAV
-================================ */
+/* ===================== PAGE WIDTH ===================== */
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* ===================== HEADER ===================== */
 header {
-    background-color: #4a82b6;
-    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    padding: 1rem;
 }
 
+/* Header heading border */
+header h1 {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+}
+
+/* ===================== NAVIGATION (FLEXBOX) ===================== */
 nav {
-    background-color: #4a82b6;
-    /* REQUIRED */
-    padding: 10px;
-    /* REQUIRED */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 nav a {
-    color: #ffffff;
-    padding: 10px;
-    /* REQUIRED */
     display: block;
-    /* REQUIRED */
+    padding: 0.5rem;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
 }
 
-/* ================================
-   MAIN CONTENT
-================================ */
-main {
-    max-width: 840px;
-    /* REQUIRED */
-    margin: 20px auto;
-    padding: 10px;
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* ================================
-   HEADING
-================================ */
-h1 {
-    color: #4a82b6;
-    /* REQUIRED */
-    margin-bottom: 10px;
+/* ===================== GRID LAYOUT ===================== */
+.grid {
+    display: grid;
+    align-items: center;
 }
 
-/* ================================
-   PROFILE IMAGE (MAIN IMG)
-================================ */
-main img {
-    width: 150px;
-    /* REQUIRED */
-    height: auto;
-    /* REQUIRED */
-    border: 1px solid #000;
-    padding: 5px;
-    box-shadow: 2px 2px 5px gray;
-    /* REQUIRED */
-}
-
-/* ================================
-   PARAGRAPHS
-================================ */
-p {
-    padding: 0;
-    /* REQUIRED */
-    margin-bottom: 10px;
-}
-
-/* ================================
-   ASIDE
-================================ */
+/* ===================== ASIDE ===================== */
 aside {
-    width: 300px;
-    /* REQUIRED */
-    margin: 10px;
-    /* REQUIRED */
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 10px;
-    /* REQUIRED */
-    background-color: #eee;
-    /* REQUIRED */
-    color: #333;
-    /* REQUIRED */
+    width: 20rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 1rem;
+    background-color: #f1f1f1;
 }
 
-aside img {
-    width: 200px;
-    /* REQUIRED */
-    height: auto;
-    /* REQUIRED */
+/* ===================== MAIN ===================== */
+main {
+    grid-column: 2 / 3;
+    margin: 1rem;
 }
 
-/* ================================
-   FOOTER
-================================ */
+/* ===================== FOOTER ===================== */
 footer {
-    margin-top: 20px;
-    /* REQUIRED */
-    border-top: 1px solid #ccc;
-    /* REQUIRED */
+    border-top: 1px solid #000;
     text-align: center;
-    /* REQUIRED */
-    padding: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
 }
