@@ -1,83 +1,121 @@
-/* ===================== RESET ===================== */
+/* ================================
+   UNIVERSAL RESET
+================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===================== BODY ===================== */
+/* ================================
+   BODY
+================================ */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    color: #000;
 }
 
-/* ===================== PAGE WIDTH ===================== */
-header,
-.grid,
-footer {
-    max-width: 840px;
-    margin: 0 auto;
-}
-
-/* ===================== HEADER ===================== */
+/* ================================
+   HEADER & NAV
+================================ */
 header {
-    background-color: steelblue;
-    color: white;
-    padding: 1rem;
+    background-color: #4a82b6;
+    padding: 10px;
 }
 
-/* Header heading border */
-header h1 {
-    border-bottom: 2px solid white;
-    padding-bottom: 0.5rem;
-}
-
-/* ===================== NAVIGATION (FLEXBOX) ===================== */
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
+    background-color: #4a82b6;
+    /* REQUIRED */
+    padding: 10px;
+    /* REQUIRED */
 }
 
 nav a {
+    color: #ffffff;
+    padding: 10px;
+    /* REQUIRED */
     display: block;
-    padding: 0.5rem;
+    /* REQUIRED */
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: white;
+    font-weight: bold;
 }
 
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* ===================== GRID LAYOUT ===================== */
-.grid {
-    display: grid;
-    align-items: center;
-}
-
-/* ===================== ASIDE ===================== */
-aside {
-    width: 20rem;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    padding: 1rem;
-    background-color: #f1f1f1;
-}
-
-/* ===================== MAIN ===================== */
+/* ================================
+   MAIN CONTENT
+================================ */
 main {
-    grid-column: 2 / 3;
-    margin: 1rem;
+    max-width: 840px;
+    /* REQUIRED */
+    margin: 20px auto;
+    padding: 10px;
 }
 
-/* ===================== FOOTER ===================== */
+/* ================================
+   HEADING
+================================ */
+h1 {
+    color: #4a82b6;
+    /* REQUIRED */
+    margin-bottom: 10px;
+}
+
+/* ================================
+   PROFILE IMAGE (MAIN IMG)
+================================ */
+main img {
+    width: 150px;
+    /* REQUIRED */
+    height: auto;
+    /* REQUIRED */
+    border: 1px solid #000;
+    padding: 5px;
+    box-shadow: 2px 2px 5px gray;
+    /* REQUIRED */
+}
+
+/* ================================
+   PARAGRAPHS
+================================ */
+p {
+    padding: 0;
+    /* REQUIRED */
+    margin-bottom: 10px;
+}
+
+/* ================================
+   ASIDE
+================================ */
+aside {
+    width: 300px;
+    /* REQUIRED */
+    margin: 10px;
+    /* REQUIRED */
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 10px;
+    /* REQUIRED */
+    background-color: #eee;
+    /* REQUIRED */
+    color: #333;
+    /* REQUIRED */
+}
+
+aside img {
+    width: 200px;
+    /* REQUIRED */
+    height: auto;
+    /* REQUIRED */
+}
+
+/* ================================
+   FOOTER
+================================ */
 footer {
-    border-top: 1px solid #000;
+    margin-top: 20px;
+    /* REQUIRED */
+    border-top: 1px solid #ccc;
+    /* REQUIRED */
     text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
+    /* REQUIRED */
+    padding: 10px;
 }

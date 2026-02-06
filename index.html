@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | WDD130</title>
-    <meta name="description" content="WDD130 Home Page Layout using CSS Flexbox and Grid">
+
+    <!-- REQUIRED TITLE -->
+    <title>WDD 130 | Ramish Lal Khokhar</title>
+
+    <!-- REQUIRED META TAGS -->
+    <meta name="description"
+      content="WDD 130 course home page for Ramish Lal Khokhar showcasing web development learning using HTML and CSS.">
     <meta name="author" content="Ramish Lal Khokhar">
 
-    <!-- CSS LINK (VERY IMPORTANT) -->
+    <!-- REQUIRED CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
+    <!-- HEADER WITH SINGLE NAV -->
     <header>
-        <h1>WDD 130: Web Fundamentals</h1>
+        <img src="images/logo.png" alt="WDD 130 course logo">
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="https://www.linkedin.com">LinkedIn</a>
-            <a href="https://www.facebook.com">Facebook</a>
+            <a href="#">Home</a>
+            <a href="wwr/">Rafting Website</a>
         </nav>
     </header>
 
-    <!-- GRID CONTAINER -->
-    <div class="grid">
+    <!-- MAIN CONTENT -->
+    <main>
+        <h1>Ramish Lal Khokhar | WDD 130</h1>
 
-        <aside>
-            <h2>Aside Content</h2>
-            <p>
-                This aside section contains supplemental information and links
-                related to the main content of the page.
-            </p>
-        </aside>
+        <img src="images/profile.jpg" alt="Profile image of Ramish Lal Khokhar">
 
-        <main>
-            <h2>Main Content</h2>
-            <p>
-                This main section demonstrates the use of CSS Flexbox for navigation
-                and CSS Grid for page layout as part of the Week 04 code-along activity.
-            </p>
+        <p>
+            Hello! My name is Ramish Lal Khokhar. I am studying web development and learning
+            how to build clean, well-structured websites using HTML and CSS.
+        </p>
+    </main>
 
-            <p>
-                The layout places the a
+    <!-- ASIDE (REQUIRED POSITION & CONTENT) -->
+    <aside>
+        <h2>Pakistan</h2>
+
+        <img src="images/pakistan.jpg" alt="Map of Pakistan">
+
+        <p>
+            Pakistan is my home country. It is known for its rich history, diverse culture,
+            and beautiful landscapes ranging from mountains to plains.
+        </p>
+    </aside>
+
+    <!-- FOOTER (NO NAV ALLOWED) -->
+    <footer>
+        <p>©2026 🌴 Ramish Lal Khokhar 🌴 Pakistan</p>
+    </footer>
+
+</body>
+
+</html>
