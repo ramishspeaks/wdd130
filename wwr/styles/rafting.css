@@ -1,10 +1,32 @@
+/* ===================== CSS VARIABLES ===================== */
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #5fa8d3;
+    --accent-color: #cae9ff;
+    --text-color: #102a43;
+    --background-color: #ffffff;
+    --overlay-color: #1b4965cc;
+    /* primary color with opacity */
+}
+
+/* ===================== GLOBAL ===================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
 /* ===================== HEADER GRID ===================== */
 .header-grid {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    background-color: #0b3c5d;
+    background-color: var(--primary-color);
     padding: 1rem;
+    color: var(--background-color);
+    /* fixes contrast issue */
 }
 
 .header-grid img {
@@ -18,9 +40,13 @@ header nav {
 }
 
 header nav a {
-    color: #f4a261;
+    color: var(--accent-color);
     text-decoration: none;
     font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 /* ===================== HERO ===================== */
@@ -38,8 +64,8 @@ header nav a {
     top: 20px;
     width: 100%;
     text-align: center;
-    background-color: rgba(38, 70, 83, 0.8);
-    color: white;
+    background-color: var(--overlay-color);
+    color: var(--background-color);
     padding: 1rem;
 }
 
@@ -47,7 +73,7 @@ header nav a {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: #f1f1f1;
+    background-color: var(--accent-color);
     max-width: 400px;
     padding: 1rem;
 }
@@ -60,27 +86,35 @@ header nav a {
 
 /* ===================== HISTORY ===================== */
 .history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
     padding: 1rem;
 }
 
-.history h2 {
-    grid-column: 1 / -1;
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.history img {
+    width: 200px;
 }
 
 /* ===================== ADVENTURES ===================== */
 .adventures {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
     padding: 1rem;
     text-align: center;
 }
 
-.adventures img {
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.adventure-gallery img {
     width: 100%;
+    max-width: 180px;
     height: auto;
 }
 
@@ -94,8 +128,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #000;
     padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-top: 1px solid var(--text-color);
 }
 
 .socialmedia {
