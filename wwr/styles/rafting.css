@@ -1,3 +1,10 @@
+/* ===================== RESET ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ===================== CSS VARIABLES ===================== */
 :root {
     --primary-color: #1b4965;
@@ -6,7 +13,6 @@
     --text-color: #102a43;
     --background-color: #ffffff;
     --overlay-color: #1b4965cc;
-    /* primary color with opacity */
 }
 
 /* ===================== GLOBAL ===================== */
@@ -73,7 +79,8 @@ header nav a:hover {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
+    color: var(--background-color);
     max-width: 400px;
     padding: 1rem;
 }
