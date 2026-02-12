@@ -18,35 +18,42 @@
 /* ===================== GLOBAL ===================== */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     color: var(--text-color);
     background-color: var(--background-color);
+    line-height: 1.6;
 }
 
-/* ===================== HEADER GRID ===================== */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* ===================== HEADER ===================== */
 .header-grid {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
     background-color: var(--primary-color);
-    padding: 1rem;
-    color: var(--background-color);
-    /* fixes contrast issue */
+    padding: 1rem 2rem;
 }
 
 .header-grid img {
     width: 120px;
 }
 
-/* ===================== NAV FLEX ===================== */
 header nav {
     display: flex;
     justify-content: space-evenly;
 }
 
 header nav a {
-    color: var(--accent-color);
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -62,7 +69,6 @@ header nav a:hover {
 
 .hero img {
     width: 100%;
-    height: auto;
 }
 
 .hero h1 {
@@ -71,7 +77,7 @@ header nav a:hover {
     width: 100%;
     text-align: center;
     background-color: var(--overlay-color);
-    color: var(--background-color);
+    color: white;
     padding: 1rem;
 }
 
@@ -80,22 +86,12 @@ header nav a:hover {
     bottom: 20px;
     left: 20px;
     background-color: var(--secondary-color);
-    color: var(--background-color);
+    color: white;
     max-width: 400px;
     padding: 1rem;
 }
 
-.hero article img {
-    float: right;
-    width: 120px;
-    margin-left: 10px;
-}
-
 /* ===================== HISTORY ===================== */
-.history {
-    padding: 1rem;
-}
-
 .history-content {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -103,13 +99,8 @@ header nav a:hover {
     align-items: center;
 }
 
-.history img {
-    width: 200px;
-}
-
 /* ===================== ADVENTURES ===================== */
 .adventures {
-    padding: 1rem;
     text-align: center;
 }
 
@@ -122,12 +113,96 @@ header nav a:hover {
 .adventure-gallery img {
     width: 100%;
     max-width: 180px;
-    height: auto;
 }
 
-.adventures figcaption {
+/* ===================== CONTACT PAGE ===================== */
+
+/* Company Info */
+.company-info {
+    margin-bottom: 3rem;
+}
+
+.company-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Google Map */
+.company-info iframe {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin-top: 1rem;
+}
+
+/* Employees */
+.employees {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.employees figure {
+    max-width: 220px;
+    text-align: center;
+}
+
+.employees img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.employees figcaption {
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
 }
 
 /* ===================== FOOTER ===================== */
@@ -135,10 +210,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: var(--primary-color);
-    color: var(--background-color);
-    border-top: 1px solid var(--text-color);
+    color: white;
 }
 
 .socialmedia {
